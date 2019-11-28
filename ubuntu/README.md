@@ -65,6 +65,7 @@ Note: Workspaces refer to grouping of windows on your desktop. You can create mu
     - **Super + End**: Switch to last workspace.
     - **Super + Home**: Switch to workspace 1.
     - **Super + 1**: open program one from the minimized programs. **Super + 2**, same thing.
+    - **Super + Shift + 1**, **Super + Shift + 9**: Open application 1-9 from the pinned applications.
 
 #### System:
 
