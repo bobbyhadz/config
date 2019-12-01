@@ -77,6 +77,7 @@ Note: Workspaces refer to grouping of windows on your desktop. You can create mu
 
 #### Windows:
 
+    - **Super + hold Left Click and move**: Move any window without clicking the titlebar.
     - **Super + H**: Hide window.
     - **Super + Up Arrow**: Maximize window.
     - **Super + Down Arrow**: Minimize window.
