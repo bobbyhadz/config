@@ -40,7 +40,7 @@ The Super key is the one between the Ctrl and Alt keys in the bottom left corner
     - **Ctrl + Left Arrow**: move the cursor one word to the left.
     - **Ctrl + Right Arrow**: move the cursor one word to the right.
     - **Ctrl + C**: abort operation / delete line.
-    - **Ctrl + U**: delete all characters before the cursor.
+    - **Alt + W**: delete all characters before the cursor.
     - **Alt + D**: delete all characters after the cursor to the end of the line.
 
 ---
