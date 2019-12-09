@@ -1,10 +1,10 @@
 # Vscode configuration
 
-## Color Theme:
+## Color Theme
 
 - Monokai
 
-## Extensions:
+## Extensions
 
 - [**Auto Close Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag) automatically adds HTML/JSX close tag when you type in the closing bracket for the opening tag.
 - [**Auto Rename Tag**](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) enables you to automatically rename HTML/JSX tags.
@@ -26,8 +26,10 @@
 - [**Sort lines**](https://marketplace.visualstudio.com/items?itemName=Tyriar.sort-lines) enables you to sort lines in text, for example in YAML templates.
 - [**Indent Rainbow**](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) makes indentation easier to read, I use it only in yaml files, but it works for all languages.
 - [**vscode cfn lint**](https://marketplace.visualstudio.com/items?itemName=kddejong.vscode-cfn-lint) provides a linter for cloudformation and aws sam.
+- [**Markdownlint**](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) provides a linter for markdown (.md) files.
+- [**Git History**](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) provides a visual interface for git logs, file history, branches and commits.
 - [**Settings Sync**](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) extension syncs settings file, keybindings file, launch file, snippets folder, vscode extensions & extension configuration, workspaces folder. This extension saves the the beforementioned config into a gist [**gist**](https://gist.github.com/), so any time you need to save your settings into a new revision of the gist you just use **CTRL + Shift + P** and type **Sync: Update/Upload Settings**. In order to download your last revision of the gist you again use **CTRL + Shift + P** and type **Sync: Download Settings**. If the extension gets bugged you can reset the extension settings, just press **CTRL + Shift + P** and type **Sync: Reset Extension Settings**.
 
-## Keybindings, Snippets, Settings, Extensions:
+## Keybindings, Snippets, Settings, Extensions
 
 - Available in a [**gist**](https://gist.github.com/), handled by [**Settings Sync extension**](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync).
