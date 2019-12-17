@@ -1,5 +1,5 @@
-## Personal configuration for:
+# Personal configuration for
 
-- **Ubuntu**
-- **Visual Studio Code**
-- **Oh-My-Zsh**
+- **[Ubuntu](ubuntu/README.md)**
+- **[Visual Studio Code](vscode/README.md)**
+- **[Oh-My-Zsh](oh-my-zsh/README.md)**
