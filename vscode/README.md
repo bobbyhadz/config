@@ -28,7 +28,7 @@
 - [**vscode cfn lint**](https://marketplace.visualstudio.com/items?itemName=kddejong.vscode-cfn-lint) provides a linter for cloudformation and aws sam.
 - [**Markdownlint**](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) provides a linter for markdown (.md) files.
 - [**Git History**](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) provides a visual interface for git logs, file history, branches and commits.
-- [**Serverless IDE**](https://marketplace.visualstudio.com/items?itemName=ThreadHeap.serverless-ide-vscode) provides autocompletion for AWS Cloudformation and AWS SAM.
+- [**CloudFormation**](https://marketplace.visualstudio.com/items?itemName=aws-scripting-guy.cform) provides autocompletion for AWS Cloudformation.
 - [**Settings Sync**](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) extension syncs settings file, keybindings file, launch file, snippets folder, vscode extensions & extension configuration, workspaces folder. This extension saves the the beforementioned config into a gist [**gist**](https://gist.github.com/), so any time you need to save your settings into a new revision of the gist you just use **CTRL + Shift + P** and type **Sync: Update/Upload Settings**. In order to download your last revision of the gist you again use **CTRL + Shift + P** and type **Sync: Download Settings**. If the extension gets bugged you can reset the extension settings, just press **CTRL + Shift + P** and type **Sync: Reset Extension Settings**.
 
 ## Keybindings, Snippets, Settings, Extensions
