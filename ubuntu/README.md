@@ -1,12 +1,12 @@
 # Ubuntu configuration
 
-## Keyboard shortcuts:
+## Keyboard shortcuts
 
 The Super key is the one between the Ctrl and Alt keys in the bottom left corner of the keyboard. On most keybaords, it has a Windows symbol on it, "Super" is an operating system neutral name for the Windows key.
 
-### Terminal:
+### Terminal
 
-#### Terminal Window Tabs:
+#### Terminal Window Tabs
 
     - **Ctrl + Alt + T**: Open a new terminal window in the ~ directory.
     - **Right Click + E**: Open a new terminal window in the current directory.
@@ -17,21 +17,23 @@ The Super key is the one between the Ctrl and Alt keys in the bottom left corner
     - **Ctrl + Shift + Page Down**: Move to tab to the right.
     - **Alt + 1**: Switch to Tab 1.
     - **Alt + 2**: Switch to Tab 2, and so on up to **Alt + 9** to switch to tab 9.
+    - **Ctrl + W**: Delete previous word.
+    - **Alt + D**: Delete next word.
 
-#### Terminal Search:
+#### Terminal Search
 
     - **Ctrl + Shift + F**: find text in terminal.
     - **Ctrl + Shift + G**: find next occurance.
     - **Ctrl + Shift + H**: find previous occurance.
 
-#### Terminal View:
+#### Terminal View
 
     - **F11**: Toggle Full Screen mode.
     - **Ctrl+ +**: Zoom In.
     - **Ctrl + -**: Zoom Out.
     - **Ctrl + 0**: Reset back to Normal size.
 
-#### Terminal Edit:
+#### Terminal Edit
 
     - **Ctrl + Shift + C**: Copy the highlighted text. You must use the mouse to highlight the text.
     - **Ctrl + Shift + V**: Paste the copied text in a terminal window.
@@ -45,11 +47,11 @@ The Super key is the one between the Ctrl and Alt keys in the bottom left corner
 
 ---
 
-### Desktop:
+### Desktop
 
 Note: Workspaces refer to grouping of windows on your desktop. You can create multiple workspaces, which act like virtual desktops. Workspaces are meant to reduce clutter and make the desktop easier to navigate. For example you could have all your communication windows, such as e-mail and your chat program, on one workspace, your code editor/programming stuff on another workspace and your music player could be on a third workspace. In order to use workspaces click on Activities in the top bar, a vertical panel will appear showing workspaces in use, plus an empty workspace. This is the workspace selector. To add a workspace, drag and drop a window from an existing workspace onto the empty workspace in the workspace selector. The workspace now contains the window you have dropped, and a new empty workspace will appear below it. To remove a workspace, simply close all of its windows or move them to other workspaces.
 
-#### Navigation:
+#### Navigation
 
     - **Super**: - Open Dash home lens. Press Super again to close Dash.
     - **Super + A**: - Open application lens.
@@ -67,7 +69,7 @@ Note: Workspaces refer to grouping of windows on your desktop. You can create mu
     - **Super + 1**: open program one from the minimized programs. **Super + 2**, same thing.
     - **Super + Shift + 1**, **Super + Shift + 9**: Open application 1-9 from the pinned applications.
 
-#### System:
+#### System
 
     - **Super + L**: Lock screen.
     - **Ctrl + Alt + Delete**: Log out.
@@ -75,7 +77,7 @@ Note: Workspaces refer to grouping of windows on your desktop. You can create mu
     - **Super + S**: Show the overview of open windows.
     - **Alt + F2**: Show the run command prompt. Can them invoke a terminal command like **code .** or **google-chrome**
 
-#### Windows:
+#### Windows
 
     - **Super + hold Left Click and move**: Move any window without clicking the titlebar.
     - **Super + H**: Hide window.

@@ -4,7 +4,7 @@
 
 **plugins**=(git aws docker docker-compose httpie npm zsh-autosuggestions zsh-completions)
 
-## Plugins from the [**robbyrussell repository**](https://github.com/robbyrussell/oh-my-zsh):
+## Plugins from the [**robbyrussell repository**](https://github.com/robbyrussell/oh-my-zsh)
 
 - The [**git**](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/git/README.md) plugin provides useful aliases (keyboard shortcuts) for the most commonly used git commands.
 - The [**aws**](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/aws/README.md) plugin provides completion support for awscli and a few utilities to manage AWS profiles and display them in the prompt.
@@ -13,7 +13,7 @@
 - The [**httpie**](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/httpie/README.md) plugin provides auto-completion for [**HTTPie**](https://httpie.org/) client, a command line HTTP client, replacement for cURL.
 - The [**npm**](https://github.com/robbyrussell/oh-my-zsh/blob/master/plugins/npm/README.md) plugin provides completion as well as some aliases.
 
-## Plugins from the [**zsh-users group**](https://github.com/zsh-users):
+## Plugins from the [**zsh-users group**](https://github.com/zsh-users)
 
 - The [**zsh-autosuggestions**](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md) plugin suggests commands as you type, based on history and completions.
 - The [**zsh-syntax-highlighting**](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) plugin provides syntax highlighting for the shell zsh. It enables highlighting of commands whilst they are typed at a zsh prompt into an interactive terminal. This helps in reviewing commands before running them, particularly in catching syntax errors.
