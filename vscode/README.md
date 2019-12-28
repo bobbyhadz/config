@@ -31,6 +31,608 @@
 - [**CloudFormation**](https://marketplace.visualstudio.com/items?itemName=aws-scripting-guy.cform) provides autocompletion for AWS Cloudformation.
 - [**Settings Sync**](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) extension syncs settings file, keybindings file, launch file, snippets folder, vscode extensions & extension configuration, workspaces folder. This extension saves the the beforementioned config into a gist [**gist**](https://gist.github.com/), so any time you need to save your settings into a new revision of the gist you just use **CTRL + Shift + P** and type **Sync: Update/Upload Settings**. In order to download your last revision of the gist you again use **CTRL + Shift + P** and type **Sync: Download Settings**. If the extension gets bugged you can reset the extension settings, just press **CTRL + Shift + P** and type **Sync: Reset Extension Settings**.
 
-## Keybindings, Snippets, Settings, Extensions
+## Keybindings, Settings, Extensions
 
 - Available in a [**gist**](https://gist.github.com/), handled by [**Settings Sync extension**](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync).
+
+## Snippets
+
+### Declarations
+
+#### `l⇥` let statement
+
+```js
+let ${1:name}
+```
+
+#### `la⇥` let assignment
+
+```js
+let ${1:name} = ${2:value}
+```
+
+#### `c⇥` const statement
+
+```js
+const ${1:name}
+```
+
+#### `ca⇥` const assignment
+
+```js
+const ${1:name} = ${2:value}
+```
+
+#### `cd⇥` const from destructuring
+
+```js
+const { ${1:name} } = ${2:value}
+```
+
+### Conditionals
+
+#### `i⇥` if statement
+
+```js
+if (${1:condition}) {
+  ${0}
+}
+```
+
+#### `te⇥` ternary statement
+
+```js
+${1:cond} ? ${2:true} : ${3:false}
+```
+
+#### `ta⇥` ternary assignment
+
+```js
+const ${0} = ${1:cond} ? ${2:true} : ${3: false}
+```
+
+#### `el⇥` else statement
+
+```js
+else {
+ ${0}
+}
+```
+
+#### `ife⇥` if and else statements
+
+```js
+if (${1:condition}) {
+  ${2}
+} else {
+  ${0}
+}
+```
+
+#### `ei⇥` else if
+
+```js
+else if (${1:condition}) {
+  ${0}
+}
+```
+
+#### `tc⇥` try/catch block
+
+```js
+try {
+  ${1}
+} catch (${2:err}) {
+  ${3}
+}
+```
+
+#### `tof⇥` typeof comparison
+
+```js
+typeof ${1:source} === '${2:undefined}'
+```
+
+#### `ia⇥` isArray
+
+```js
+Array.isArray(${1:source})
+```
+
+### Loops
+
+#### `fl⇥` for loop (ES6)
+
+```js
+for (let ${1:i} = 0; i < ${2:iterable}.length; ${1:i}++) {
+  ${0}
+}
+```
+
+#### `fi⇥` for in loop (ES6)
+
+```js
+for (const ${1:key} of ${2:source}) {
+  ${0}
+}
+```
+
+#### `fo⇥` for of loop (ES6)
+
+```js
+for (const ${1:key} of ${2:source}) {
+  ${0}
+}
+```
+
+#### `wl⇥` while loop
+
+```js
+while (${1:condition}) {
+  ${0}
+}
+```
+
+#### `fe⇥` forEach loop
+
+```js
+${1:iterable}.forEach((${2:item}) => {
+  ${0}
+})
+```
+
+#### `map⇥` map function
+
+```js
+${1:iterable}.map((${2:item}) => {
+  ${0}
+})
+```
+
+#### `reduce⇥` reduce function
+
+```js
+${1:iterable}.reduce((${2:accumulator}, ${3:current}) => {
+  ${0}
+}${4:, initial})
+```
+
+#### `filter⇥` filter function
+
+```js
+${1:iterable}.filter((${2:item}) => {
+  ${0}
+})
+```
+
+#### `find⇥` find function
+
+```js
+${1:iterable}.find((${2:item}) => {
+  ${0}
+})
+```
+
+#### `every⇥` every function
+
+```js
+${1:iterable}.every((${2:item}) => {
+  ${0}
+})
+```
+
+#### `some⇥` some function
+
+```js
+${1:iterable}.some((${2:item}) => {
+  ${0}
+})
+```
+
+### Functions
+
+#### `cf⇥` const arrow function assignment
+
+```js
+const ${1:name} = (${2:arguments}) => {
+  return ${0}
+}
+```
+
+#### `fan⇥` anonymous function
+
+```js
+function (${1:arguments}) {
+  ${0}
+}
+```
+
+#### `fn⇥` named function
+
+```js
+function ${1:name}(${2:arguments}) {
+  ${0}
+}
+```
+
+#### `afn⇥` async function
+
+```js
+async function ${1:name}(${2:arguments}) {
+  ${0}
+}
+```
+
+#### `acf⇥` async const function
+
+```js
+const ${1:name} = async (${2:arguments}) => {
+  ${0}
+}
+```
+
+#### `iife⇥` immediately-invoked function expression
+
+```js
+;(function (${1:arguments}) {
+  ${0}
+})(${2})
+```
+
+#### `fa⇥` function apply
+
+```js
+${1:fn}.apply(${2:this}, ${3:argArray})
+```
+
+#### `fc⇥` function call
+
+```js
+${1:fn}.call(${2:this}, ${3:arguments})
+```
+
+#### `fb⇥` function bind
+
+```js
+${1:fn}.bind(${2:this}, ${3:arguments})
+```
+
+#### `rfb⇥` react function bind
+
+```js
+this.${1:name} = this.${1:name}.bind(this);
+```
+
+#### `aaf⇥` anonymous arrow function (ES6)
+
+```js
+(${1:params}) => {
+  ${0}
+}
+```
+
+#### `r⇥` return
+
+```js
+return ${0}
+```
+
+### Promises
+
+#### `rp⇥` return Promise (ES6)
+
+```js
+return new Promise((resolve, reject) => {
+  ${0}
+})
+```
+
+#### `pa⇥` Promise.all
+
+```js
+Promise.all(${1:value})
+```
+
+#### `apa⇥` await Promise.all
+
+```js
+await Promise.all(${1:value})
+```
+
+#### `p⇥` new Promise (ES6)
+
+```js
+new Promise((resolve, reject) => {
+  ${0}
+})
+```
+
+#### `pt⇥` Promise.then
+
+```js
+${1:promise}.then((${2:value}) => {
+  ${0}
+})
+```
+
+#### `pc⇥` Promise.catch
+
+```js
+.catch(err => {
+  ${0}
+})
+```
+
+### Classes
+
+#### `tf⇥` this
+
+```js
+this.
+```
+
+#### `cs⇥` class with a constructor (ES6)
+
+```js
+class ${1:Name} {
+  constructor(${2:arguments}) {
+    ${0}
+  }
+}
+```
+
+#### `cp⇥` constructor property
+
+```js
+this.${1:property} = ${1:value}
+```
+
+#### `csx⇥` extend a class (ES6)
+
+```js
+class ${1:Name} extends ${2:Base} {
+  constructor(${2:arguments}) {
+    super(${2:arguments})
+    ${0}
+  }
+}
+```
+
+#### `m⇥` method
+
+```js
+${1:methodName} = (${2:params}) => {
+  ${0}
+}
+```
+
+#### `get⇥` getter (ES6 syntax)
+
+```js
+get ${1:property} () {
+  ${0}
+}
+```
+
+#### `set⇥` setter (ES6 syntax)
+
+```js
+set ${1:property} (${2:value}) {
+  ${0}
+}
+```
+
+#### `proto⇥` prototype method
+
+```js
+${1:Class}.prototype.${2:methodName} = function (${3:arguments}) {
+  ${0}
+}
+```
+
+### Object methods
+
+#### `ok⇥` Object.keys
+
+```js
+Object.keys(${1:obj})
+```
+
+#### `ov⇥` Object.values
+
+```js
+Object.values(${1:obj})
+```
+
+#### `oe⇥` Object.entries
+
+```js
+Object.entries(${1:obj})
+```
+
+#### `oa⇥` Object.assign
+
+```js
+Object.assign(${1:dest}, ${2:source})
+```
+
+### Exports and Imports
+
+#### `e⇥` module export
+
+```js
+export {${1:member}}
+```
+
+#### `ed⇥` module default export
+
+```js
+export default ${1:member}
+```
+
+#### `edf⇥` export default function
+
+```js
+export default function ${1:name} (${2:arguments}) {
+  ${0}
+}
+```
+
+#### `ec⇥` module export const
+
+```js
+export const ${1:member} = ${2:value}
+```
+
+#### `ecf⇥` export const function
+
+```js
+export const ${1:name} = (${2:arguments}) => {
+  ${0}
+}
+```
+
+#### `im⇥` import module
+
+```js
+import ${1:module} from '${2:module}'
+```
+
+#### `id⇥` import destructured module
+
+```js
+import { $1 } from '${2:module}';
+```
+
+### Testing
+
+#### `desc⇥` describe
+
+```js
+describe('${1:description}', () => {
+  ${0}
+})
+```
+
+#### `it⇥` asynchronous it
+
+```js
+it('${1:description}', async () => {
+  ${0}
+})
+```
+
+#### `its⇥` it synchronous
+
+```js
+it('${1:description}', () => {
+  ${0}
+})
+```
+
+#### `bfe⇥` before each test
+
+```js
+beforeEach(() => {
+  ${0}
+})
+```
+
+#### `afe⇥` after each test
+
+```js
+afterEach(() => {
+  ${0}
+})
+```
+
+### Misc
+
+#### `st⇥` setTimeout
+
+```js
+setTimeout(() => {
+  ${0}
+}, ${1:delay})
+```
+
+#### `si⇥` setInterval
+
+```js
+setInterval(() => {
+  ${0}
+}, ${1:delay})
+```
+
+#### `sim⇥` setImmediate
+
+```js
+setImmediate(() => {
+  ${0}
+})
+```
+
+#### `ae⇥` addEventListener
+
+```js
+${1:document}.addEventListener('${2:event}', ${3:functionName})
+```
+
+#### `rel⇥` removeEventListener
+
+```js
+${1:document}.removeEventListener('${2:event}', ${3:listener})
+```
+
+#### `js⇥` JSON.stringify
+
+```js
+JSON.stringify($0);
+```
+
+#### `jp⇥` JSON.parse
+
+```js
+JSON.parse($0);
+```
+
+#### `cl⇥` console.log
+
+```js
+console.log(${0})
+```
+
+#### `cv⇥` console.log verbose
+
+```js
+console.log('${0}:', ${0})
+```
+
+### Node.js
+
+#### `cb⇥` Node.js style callback
+
+```js
+(err, ${1:value}) => {
+  if (err) throw err
+  ${0}
+}
+```
+
+#### `rq⇥` require a module
+
+```js
+require('${1:module}');
+```
+
+#### `cr⇥` const require and assign a module
+
+```js
+const ${1:module} = require('${1:module}')
+```
+
+#### `me⇥` module.exports
+
+```js
+module.exports = ${1:name}
+```
