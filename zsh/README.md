@@ -1,4 +1,4 @@
-# OH-MY-ZSH configuration
+# zsh configuration
 
 ## A short list of the plugins that I use for [**oh-my-zsh**](https://github.com/robbyrussell/oh-my-zsh)
 
