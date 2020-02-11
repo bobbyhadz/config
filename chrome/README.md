@@ -8,7 +8,7 @@
 - [**ColorZilla**](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp) lets you pick colors from the websites you visit.
 - [**Vimium**](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb) provides vim-like keyboard shortcuts for navigation and control.
 - [**Stylus**](https://github.com/StylishThemes/GitHub-Dark) provides dark theme with code highlighting in GitHub, you can pick the syntax highlighting theme for the code and use fira code or other fonts.
-- [**Noisli**](https://www.noisli.com/) provides ambient sounds to focus while coding.
+- [**Relaxing Sounds**](https://chrome.google.com/webstore/detail/relaxing-sounds-giovesoft/gpgbpbpobbgnaognooilkmncoonaedao) provides ambient sounds to focus while coding.
 - [**Gnome Shell integration**](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep) provides integration with GNOME Shell.
 - [**Octotree**](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc) allows you to easily navigate a code tree, just like in an IDE, on GitHub.
 - [**JSONView**](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) enables syntax highlighting and validation of JSON documents.
