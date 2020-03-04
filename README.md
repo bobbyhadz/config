@@ -1,6 +1,8 @@
 # Personal configuration for
 
-- **[Ubuntu](ubuntu/README.md)**
-- **[Visual Studio Code](vscode/README.md)**
+- **[ubuntu](ubuntu/README.md)**
+- **[vscode](vscode/README.md)**
 - **[zsh](zsh/README.md)**
 - **[chrome](chrome/README.md)**
+- **[git](git/README.md)**
+- **[vim](vim/README.md)**

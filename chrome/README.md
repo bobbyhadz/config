@@ -16,3 +16,4 @@
 - [**AutoScroll**](https://chrome.google.com/webstore/detail/autoscroll/occjjkgifpmdgodlplnacmkejpdionan) adds customizable autoscroll support to Chrome for Linux/Mac.
 - [**Ultidash**](https://chrome.google.com/webstore/detail/ultidash-new-tab/dghaelfeofkkdebndhkfoneojddiebhd) dashboards for empty chrome tabs.
 - [**BetterTTV**](https://chrome.google.com/webstore/detail/betterttv/ajopnjidmegmdimjlfnijceegpefgped?hl=en) enhances Twitch with new features and emotes.
+- [**Click To Remove Element**](https://chrome.google.com/webstore/detail/click-to-remove-element/jcgpghgjhhahcefnfpbncdmhhddedhnk?hl=en) outlines in red on hover and removes invisible adds and overlays on click.

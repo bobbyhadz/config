@@ -15,6 +15,7 @@
 - [**GitLens**](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) helps you to visualize code authorship via Git blame annotations and code lens, seamlessly navigate and explore Git repositories, etc.
 - [**Import Cost**](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost) displays inline in the editor the size of the imported package.
 - [**Live Server**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) enables you to launch a local development server with live reload feature for static & dynamic pages.
+- [**Live Sass Compiler**](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) helps you compile your SASS/SCSS files to CSS files at realtime with live browser reload.
 - [**Material Icon Theme**](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme) provides lots of icons based on Material Design for Visual Studio Code.
 - [**Prettier**](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) enforces a consistent style by parsing your code and re-printing it with its own rules that take the maximum line length into account, wrapping code when necessary. To enable Formatting code on Save edit the setting: **Format On Save** and set it to true.
 - [**TODO Highlight**](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight) highlights TODO: FIXME: and other annotations within your code.
@@ -31,7 +32,7 @@
 - [**CloudFormation**](https://marketplace.visualstudio.com/items?itemName=aws-scripting-guy.cform) provides autocompletion for AWS Cloudformation.
 - [**Visual Studio Intellicode**](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) shows recommended completion items for your code context at the top of the completions list.
 - [**Github Pull Requests**](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) allows you to review and manage GitHub pull requests.
-- [**OpenAPI-Designer**](https://marketplace.visualstudio.com/items?itemName=philosowaffle.openapi-designer) allows you to preview openapi schema files within VSCODE.
+- [**OpenAPI-Designer**](https://marketplace.visualstudio.com/items?itemName=philosowaffle.openapi-designer) allows you to preview openapi schema files within VSCODE or in the browser.
 - [**VIM**](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) provides vim emulation for VSCODE.
 - [**Settings Sync**](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) extension syncs settings file, keybindings file, launch file, snippets folder, vscode extensions & extension configuration, workspaces folder. This extension saves the the beforementioned config into a gist [**gist**](https://gist.github.com/), so any time you need to save your settings into a new revision of the gist you just use **CTRL + Shift + P** and type **Sync: Update/Upload Settings**. In order to download your last revision of the gist you again use **CTRL + Shift + P** and type **Sync: Download Settings**. If the extension gets bugged you can reset the extension settings, just press **CTRL + Shift + P** and type **Sync: Reset Extension Settings**.
 
