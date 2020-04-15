@@ -368,14 +368,6 @@ ${1:fn}.call(${2:this}, ${3:arguments})
 ${1:fn}.bind(${2:this}, ${3:arguments})
 ```
 
-#### `aaf⇥` anonymous arrow function (ES6)
-
-```js
-(${1:params}) => {
-  ${0}
-}
-```
-
 ### Promises
 
 #### `rp⇥` return Promise (ES6)
