@@ -302,6 +302,14 @@ const ${1:name} = (${2:arguments}) => {
 }
 ```
 
+#### `aaf⇥` anonymous arrow function
+
+```js
+(${1:arguments}) => {
+  ${0}
+}
+```
+
 #### `fan⇥` anonymous function
 
 ```js
