@@ -387,7 +387,7 @@ Promise.all(${1:value})
 #### `apa⇥` await Promise.all
 
 ```js
-await Promise.all(${1:value})
+await Promise.all([${1:p1}])
 ```
 
 #### `p⇥` new Promise (ES6)
