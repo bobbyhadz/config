@@ -515,6 +515,16 @@ export {${1:member}}
 export default ${1:member}
 ```
 
+#### `edc⇥` export default conts
+
+```js
+const ${1} = (${arguments}) => {
+  return ${0}
+}
+
+export default ${1}
+```
+
 #### `edf⇥` export default function
 
 ```js
