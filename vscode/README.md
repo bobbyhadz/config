@@ -166,6 +166,20 @@ else if (${1:condition}) {
 }
 ```
 
+#### `swi⇥` switch statement
+
+```js
+switch (${1:expression}) {
+  case ${2:value1}:
+    $0
+    return;
+
+  default:
+    throw new Error(`Unhandled expression in switch: ${3}`)
+}
+
+```
+
 #### `tc⇥` try/catch block
 
 ```js
@@ -358,12 +372,6 @@ this.${1:name} = this.${1:name}.bind(this);
 (${1:params}) => {
   ${0}
 }
-```
-
-#### `r⇥` return
-
-```js
-return ${0}
 ```
 
 ### Promises
