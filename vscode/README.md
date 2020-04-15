@@ -414,12 +414,6 @@ ${1:promise}.then((${2:value}) => {
 
 ### Classes
 
-#### `tf⇥` this
-
-```js
-this.
-```
-
 #### `cs⇥` class with a constructor (ES6)
 
 ```js
