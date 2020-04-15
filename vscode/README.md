@@ -368,12 +368,6 @@ ${1:fn}.call(${2:this}, ${3:arguments})
 ${1:fn}.bind(${2:this}, ${3:arguments})
 ```
 
-#### `rfb⇥` react function bind
-
-```js
-this.${1:name} = this.${1:name}.bind(this);
-```
-
 #### `aaf⇥` anonymous arrow function (ES6)
 
 ```js
