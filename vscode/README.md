@@ -707,3 +707,9 @@ module.exports = ${1:name}
 ```js
 import React from 'react';
 ```
+
+#### `ustate⇥` useState hook
+
+```js
+const [${1:state}, ${2:setState}] = useState(${3})${0}
+```
