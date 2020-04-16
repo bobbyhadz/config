@@ -663,6 +663,14 @@ console.log(${0})
 console.log('${0}:', ${0})
 ```
 
+#### `cmmb⇥` comment block
+
+```js
+/**
+ * $0
+ */
+```
+
 ### Node.js
 
 #### `cb⇥` Node.js style callback
@@ -690,4 +698,12 @@ const ${1:module} = require('${1:module}')
 
 ```js
 module.exports = ${1:name}
+```
+
+### Reactjs
+
+#### `imr⇥` import React from 'react'
+
+```js
+import React from 'react';
 ```
