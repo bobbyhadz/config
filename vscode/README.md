@@ -114,8 +114,14 @@ const ${1:name} = ${2:value}
 
 #### `carr⇥` const array
 
-```
+```js
 const ${1:name} = [${2:value}]
+```
+
+#### `cobj⇥` const object
+
+```js
+const ${1:name} = {${2:key}: ${3:value}}
 ```
 
 #### `cd⇥` const from destructuring
