@@ -112,6 +112,12 @@ let ${1:name} = ${2:value}
 const ${1:name} = ${2:value}
 ```
 
+#### `carr⇥` const array
+
+```
+const ${1:name} = [${2:value}]
+```
+
 #### `cd⇥` const from destructuring
 
 ```js
