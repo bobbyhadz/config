@@ -786,3 +786,12 @@ const ${1:memoizedCallback} = useCallback(
   [${3:deps}]
 )${0}
 ```
+
+#### `umemo⇥` useMemo hook
+
+```js
+const ${1:memoizedValue} = useMemo(
+  () => ${2:computeExpensiveValue(a, b)},
+  [${3:deps}],
+)${0}
+```
