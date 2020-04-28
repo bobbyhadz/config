@@ -743,3 +743,15 @@ useEffect(() => {
   }
 }, [${3:deps}])${0}
 ```
+
+#### `ucontext⇥` useContext hook
+
+```js
+const ${1:value} = useContext(${2:ContextName})${0}
+```
+
+#### `ccontext⇥` React.createContext
+
+```js
+const ${1:ContextName} = React.createContext(${2:initialValue})${0}
+```
