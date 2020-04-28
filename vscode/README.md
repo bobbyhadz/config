@@ -761,3 +761,17 @@ const ${1:ContextName} = React.createContext(${2:initialValue})${0}
 ```js
 const [${1:state}, ${2:dispatch}] = useReducer(${3:reducer}, ${4:initialArg})${0}
 ```
+
+#### `rreducer⇥` reducer function
+
+```js
+function reducer(state, action) {
+  switch (action.type) {
+    case '${1:type1}':
+      return {${2:newState}}
+
+    default:
+      throw new Error(`Unhandled action type: ${action.type}`)
+  }
+}
+```
