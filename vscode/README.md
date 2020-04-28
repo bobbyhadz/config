@@ -775,3 +775,14 @@ function reducer(state, action) {
   }
 }
 ```
+
+#### `ucallback⇥` useCallback hook
+
+```js
+const ${1:memoizedCallback} = useCallback(
+  () => {
+    ${2}
+  },
+  [${3:deps}]
+)${0}
+```
