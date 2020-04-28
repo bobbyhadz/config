@@ -132,7 +132,7 @@ const { ${1:name} } = ${2:value}
 
 ### Conditionals
 
-#### `i⇥` if statement
+#### `ifx⇥` if statement
 
 ```js
 if (${1:condition}) {
