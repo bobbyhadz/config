@@ -725,3 +725,21 @@ import React from 'react';
 ```js
 const [${1:state}, ${2:setState}] = useState(${3})${0}
 ```
+
+#### `uref⇥` useRef hook
+
+```js
+const ${1:refContainer} = useRef(${2:initialValue})${0}
+```
+
+#### `ueffect⇥` useEffect hook
+
+```js
+useEffect(() => {
+  ${1}
+
+  return () => {
+    ${2:cleanup}
+  }
+}, [${3:deps}])${0}
+```
