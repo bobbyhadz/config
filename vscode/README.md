@@ -755,3 +755,9 @@ const ${1:value} = useContext(${2:ContextName})${0}
 ```js
 const ${1:ContextName} = React.createContext(${2:initialValue})${0}
 ```
+
+#### `ureducer⇥` useReducer hook
+
+```js
+const [${1:state}, ${2:dispatch}] = useReducer(${3:reducer}, ${4:initialArg})${0}
+```
