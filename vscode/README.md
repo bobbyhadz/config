@@ -765,13 +765,13 @@ const [${1:state}, ${2:dispatch}] = useReducer(${3:reducer}, ${4:initialArg})${0
 #### `rreducer⇥` reducer function
 
 ```js
-function reducer(state, action) {
+function ${1:reducer}(state, action) {
   switch (action.type) {
-    case '${1:type1}':
-      return {${2:newState}}
+    case '${2:type1}':
+      return {${3:newState}}
 
     default:
-      throw new Error(`Unhandled action type: ${action.type}`)
+      throw new Error(`Unsupported action type: ${action.type}`)
   }
 }
 ```
