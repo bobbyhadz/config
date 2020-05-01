@@ -448,8 +448,8 @@ this.${1:property} = ${1:value}
 
 ```js
 class ${1:Name} extends ${2:Base} {
-  constructor(${2:arguments}) {
-    super(${2:arguments})
+  constructor(${3:arguments}) {
+    super(${3:arguments})
     ${0}
   }
 }
@@ -669,10 +669,10 @@ JSON.parse($0);
 console.log(${0})
 ```
 
-#### `cv⇥` console.log verbose
+#### `clv⇥` console.log verbose
 
 ```js
-console.log('${0}:', ${0})
+console.log('${1}:', ${1})${0}
 ```
 
 #### `cmmb⇥` comment block
