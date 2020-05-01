@@ -314,6 +314,12 @@ const ${1:name} = (${2:arguments}) => {
 }
 ```
 
+#### `cfi⇥` const arrow function implicit return
+
+```js
+const ${1:name} = (${2:arguments}) => ${0}
+```
+
 #### `aaf⇥` anonymous arrow function
 
 ```js
@@ -527,7 +533,7 @@ export {${1:member}}
 export default ${1:member}
 ```
 
-#### `edc⇥` export default conts
+#### `edc⇥` export default const function
 
 ```js
 const ${1} = (${arguments}) => {
