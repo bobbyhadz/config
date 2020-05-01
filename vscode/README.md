@@ -428,7 +428,7 @@ ${1:promise}.then((${2:value}) => {
 
 ### Classes
 
-#### `cs⇥` class with a constructor (ES6)
+#### `cls⇥` class with a constructor (ES6)
 
 ```js
 class ${1:Name} {
@@ -444,7 +444,7 @@ class ${1:Name} {
 this.${1:property} = ${1:value}
 ```
 
-#### `csx⇥` extend a class (ES6)
+#### `clsx⇥` extend a class (ES6)
 
 ```js
 class ${1:Name} extends ${2:Base} {
