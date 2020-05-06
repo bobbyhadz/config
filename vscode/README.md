@@ -178,6 +178,18 @@ else if (${1:condition}) {
 }
 ```
 
+#### `and⇥` and operator
+
+```js
+${1:option1} && ${2:option2}
+```
+
+#### `or⇥` or operator
+
+```js
+${1:preferredOption} || ${2:option}
+```
+
 #### `swi⇥` switch statement
 
 ```js
