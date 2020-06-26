@@ -599,7 +599,7 @@ describe('${1:description}', () => {
 })
 ```
 
-#### `it⇥` asynchronous it
+#### `ita⇥` it asynchronous
 
 ```js
 it('${1:description}', async () => {
