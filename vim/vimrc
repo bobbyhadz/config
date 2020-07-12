@@ -90,3 +90,7 @@ set ignorecase
 set smartcase
 set showmatch
 map <leader><space> :let @/=''<cr> " clear search
+
+" Set Ctrl + S to save the document (:w)
+:nmap <c-s> :w<CR>
+:imap <c-s> <Esc>:w<CR>a
