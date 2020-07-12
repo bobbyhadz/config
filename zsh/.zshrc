@@ -1,35 +1,35 @@
 ################################################
-# PATH TO OH-MY-ZSH INSTALLATION 
+# PATH TO OH-MY-ZSH INSTALLATION
 ################################################
 export ZSH=~/.oh-my-zsh
 
 
 ################################################
-# THEME 
+# THEME
 ################################################
 ZSH_THEME="robbyrussell"
 
 
 ################################################
-# UPDATE ZSH WITHOUT PROMPTING 
+# UPDATE ZSH WITHOUT PROMPTING
 ################################################
 DISABLE_UPDATE_PROMPT="true"
 
 
 ################################################
-# UPDATE ZSH EVERY # DAYS 
+# UPDATE ZSH EVERY # DAYS
 ################################################
 export UPDATE_ZSH_DAYS=7
 
 
 #######################################################################
-# DISPLAY RED DOTS, WHILE WAITING FOR COMPLETION 
+# DISPLAY RED DOTS, WHILE WAITING FOR COMPLETION
 #######################################################################
 COMPLETION_WAITING_DOTS="true"
 
 
 ################################################
-# PLUGINS 
+# PLUGINS
 ################################################
 plugins=(
 	git
@@ -37,7 +37,7 @@ plugins=(
 	docker
 	docker-compose
 	httpie
-	npm	
+	npm
 	zsh-autosuggestions
 	zsh-completions
     vi-mode
@@ -47,25 +47,30 @@ source $ZSH/oh-my-zsh.sh
 
 
 ###########################################################
-# SET DEFAULT EDITOR 
+# SET DEFAULT EDITOR
 ###########################################################
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
 
+#######################################################################
+# Disable Ctrl - S performing an 'XOFF' which stops commands from being
+# received
+#######################################################################
+stty -ixon
 
 #######################################################################
 # VIM CURSOR AND MODE VISUALS
 #######################################################################
 function zle-line-init zle-keymap-select {
     #######################################################################
-    # SHOW VIM MODE IN COMMAND PROMPT 
+    # SHOW VIM MODE IN COMMAND PROMPT
     #######################################################################
     RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
     RPS2=$RPS1
 
 
     #######################################################################
-    # UPDATE VI-MODE CURSOR BASED ON MODE 
+    # UPDATE VI-MODE CURSOR BASED ON MODE
     #######################################################################
     if [ "$TERM" = "xterm-256color" ]; then
         if [ $KEYMAP = vicmd ]; then
@@ -86,36 +91,40 @@ zle -N zle-keymap-select
 
 
 #######################################################################
-# REMAP EXIT INSERT MODE TO 'jk' 
+# REMAP EXIT INSERT MODE TO 'jk'
 #######################################################################
 bindkey "jk" vi-cmd-mode
 
 
 #######################################################################
-# SET VIM KEYTIMEOUT TO 4 SECONDS 
+# SET VIM KEYTIMEOUT TO 4 SECONDS
 #######################################################################
 export KEYTIMEOUT=10
 
 
 ###############################################################################
-# FONT COLOR FOR ZSH-AUTOSUGGESTIONS ADDON 
+# FONT COLOR FOR ZSH-AUTOSUGGESTIONS ADDON
 ###############################################################################
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=12'
 
 
 ################################################
-# GENERIC ENVIRONMENT VARIABLES 
+# GENERIC ENVIRONMENT VARIABLES
 ################################################
 export PATH=~/.local/bin:$PATH
 
+# For Vscode - because bind CTRL + Shift + e doesn't work otherwise
+export GTK_IM_MODULE="xim"
+
 
 ########################################################
-# INITIALIZE AUTOCOMPLETION FOR AWS CLI 
+# INITIALIZE AUTOCOMPLETION FOR AWS CLI
 ########################################################
-source ~/.local/bin/aws_zsh_completer.sh
+export PATH=/usr/local/bin:$PATH
+# source ~/.local/bin/aws_zsh_completer.sh
 
 
 #################################################################################
-# SHOULD BE LAST IN CONFIG | SOURCE FOR ZSH-SYNTAX-HIGHLIGHTING ADDON 
+# SHOULD BE LAST IN CONFIG | SOURCE FOR ZSH-SYNTAX-HIGHLIGHTING ADDON
 #################################################################################
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
