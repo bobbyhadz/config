@@ -6,6 +6,15 @@ filetype off
 
 " TODO: Load plugins here (pathogen or vundle)
 
+" Screen will not re-draw while executing macros
+set lazyredraw
+
+" Displays the cursor line shadow
+set cursorline
+
+" Sets relative numbers, so you can 10j or 10k without counting lines
+set relativenumber
+
 " Turn on syntax highlighting
 syntax on
 
@@ -31,8 +40,6 @@ set ruler
 " Encoding
 set encoding=utf-8
 
-" Remap jk to <Esc> in insert mode
-inoremap jk <Esc>
 
 "Mode Settings
 
@@ -49,7 +56,7 @@ let &t_EI.="\e[1 q" "EI = NORMAL mode (ELSE)
 "  5 -> blinking vertical bar
 "  6 -> solid vertical bar
 
-" Whitespace
+" Whitespace {{{
 set wrap
 set textwidth=79
 set formatoptions=tcqrn1
@@ -58,11 +65,13 @@ set shiftwidth=2
 set softtabstop=2
 set expandtab
 set noshiftround
+"}}}
 
-" Cursor motion
+" Cursor motion {{{
 set scrolloff=3
 set backspace=indent,eol,start
 set matchpairs+=<:> " use % to jump between pairs
+"}}}
 
 " Move up/down editor lines
 nnoremap j gj
@@ -81,9 +90,9 @@ set laststatus=2
 set showmode
 set showcmd
 
-" Searching
-nnoremap / /\v
-vnoremap / /\v
+" Searching 
+" nnoremap / /\v
+" vnoremap / /\v
 set hlsearch
 set incsearch
 set ignorecase
@@ -94,3 +103,150 @@ map <leader><space> :let @/=''<cr> " clear search
 " Set Ctrl + S to save the document (:w)
 :nmap <c-s> :w<CR>
 :imap <c-s> <Esc>:w<CR>a
+
+
+" Auto close brackets {{{
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
+
+
+" Set jk to exit command mode
+cnoremap jk <c-c>
+"}}} 
+
+
+" insert mode maps {{{
+
+" Remap jk to <Esc> in insert mode
+inoremap jk <Esc>
+
+inoremap jl <Esc>la
+inoremap jh <Esc>i
+inoremap jj <Esc>A
+inoremap jx <Esc>lxi
+inoremap jk <Esc>
+inoremap jn <Esc>o
+inoremap <leader>dd <Esc>ddi
+inoremap <leader>> <esc>>>a
+inoremap <leader>< <esc><<a
+
+"auto close tag
+inoremap <leader>ct </<Esc>2F<lyiwf/pa><Esc>F<i
+"auto close tag with empty line
+inoremap <leader>cst </<Esc>2F<lyiwf/pa><Esc>F<i<CR><CR><Esc>kS
+"markdown code - puts cursor in middle of ``` 
+inoremap ``` ``````<esc>3ha<cr><cr><esc>kS<tab>
+"}}}
+
+" normal mode maps {{{
+
+" show search history
+nnoremap <leader>/ q/
+
+" source vimrc
+nnoremap <leader>vs :so ~/.vim/vimrc<cr>
+
+" add semi colon to end of line w/o losing location
+nnoremap <leader>; mlA;<esc>`l 
+
+" toggle search highlighting 
+nnoremap <space><space> :set nohlsearch!<CR>
+
+" resize editor window with arrow keys
+nnoremap <Down>  :resize -2<CR>
+nnoremap <Left>  :vertical resize +2<CR>
+nnoremap <Right> :vertical resize -2<CR>
+nnoremap <Up>    :resize +2<CR>
+
+" change pwd to directory of current file
+nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
+
+" toggle relative and non relative line number
+nnoremap <space>r :set relativenumber!<CR>
+nnoremap <space>n :set number!<CR>
+
+" toggle between 2 files
+nnoremap <leader><leader> :b#<CR>
+
+" quit editor
+noremap <leader>q :q<CR>
+
+" add new line in normal mode
+nnoremap go o<Esc>
+nnoremap gO O<Esc>j
+
+" j/k will move virtual lines (lines that wrap)
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j') 
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+
+" set Y to copy til end of line instead of y $
+nnoremap Y y$
+"}}}
+
+
+" operator maps - HAVE TO ADD TO VSCODE when supported {{{
+
+" using <c-u> to remove the range that vim may insert
+" operators act on the vim range or when using <c-u>, the selected range
+
+" delete around next word
+onoremap anw :<c-u>normal! wvaw<cr>
+" delete around next Word
+onoremap anW :<c-u>normal! WvaW<cr>
+" delete inner next word
+onoremap inw :<c-u>normal! wviw<cr>
+" delete inner next Word
+onoremap inW :<c-u>normal! WviW<cr>
+
+
+" around next bracket
+onoremap an[ :<c-u>normal! f[va[<cr>
+" around last bracket
+onoremap al[ :<c-u>normal! F[va[<cr>
+" inside next bracket
+onoremap in[ :<c-u>normal! f[vi[<cr>
+" inside last bracket
+onoremap il[ :<c-u>normal! F[vi[<cr>
+
+" around next bracket
+onoremap an{ :<c-u>normal! f{va{<cr>
+" around last bracket
+onoremap al{ :<c-u>normal! F{va{<cr>
+" inside next bracket
+onoremap in{ :<c-u>normal! f{vi{<cr>
+" inside last bracket
+onoremap il{ :<c-u>normal! F{vi{<cr>
+
+" around next parenthesis
+onoremap an( :<c-u>normal! f(va(<cr>
+" around last parenthesis
+onoremap ap( :<c-u>normal! F(va(<cr>
+" inside next parenthesis
+onoremap in( :<c-u>normal! f(vi(<cr>
+" inside last parenthesis
+onoremap ip( :<c-u>normal! F(vi(<cr>
+
+" around next single quote
+onoremap an' :<c-u>normal! f'va'<cr>
+" around last single quote
+onoremap ap' :<c-u>normal! F'va'<cr>
+" inside next single quote
+onoremap in' :<c-u>normal! f'vi'<cr>
+" inside last single quote
+onoremap ip' :<c-u>normal! F'vi'<cr>
+
+" around next double quote
+onoremap an" :<c-u>normal! f"va"<cr>
+" around last double quote
+onoremap ap" :<c-u>normal! F"va"<cr>
+" inside next double quote
+onoremap in" :<c-u>normal! f"vi"<cr>
+" inside last double quote
+onoremap ip" :<c-u>normal! F"vi"<cr>
+
+" }}}
