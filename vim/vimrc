@@ -25,8 +25,9 @@ colorscheme monokai
 " For plugins to load correctly
 filetype plugin indent on
 
-" Pick a leader key
-let mapleader = ","
+" Set <SPACE> as leader key
+nnoremap <SPACE> <Nop>
+let mapleader = " "
 
 " Security
 set modelines=0
@@ -145,6 +146,13 @@ inoremap ``` ``````<esc>3ha<cr><cr><esc>kS<tab>
 
 " normal mode maps {{{
 
+" capital J and K move 5 lines at a time
+nnoremap J 5j
+nnoremap K 5k
+
+" join lines
+nnoremap <leader>j J
+
 " show search history
 nnoremap <leader>/ q/
 
@@ -171,7 +179,7 @@ nnoremap <space>r :set relativenumber!<CR>
 nnoremap <space>n :set number!<CR>
 
 " toggle between 2 files
-nnoremap <leader><leader> :b#<CR>
+nnoremap ,, :b#<CR>
 
 " quit editor
 noremap <leader>q :q<CR>
