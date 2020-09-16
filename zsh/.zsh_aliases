@@ -8,7 +8,8 @@ alias o='nautilus .' # Open the current directory in gui
 alias ipe='curl ipinfo.io/ip' # print external IP address
 alias hg='history|grep' # usage hg cat would show all commands from history that contain *cat*
 alias fhere='find . -iname' # search for a file in this and the nested directories case insensitive, use \* to escape asterix                   
-
+alias df='df -Tha --total' # disk usage in human readable format
+alias free='free -mt' # used/unused RAM report
 
 #################################################################################          
 # 💡 Npm Aliases
