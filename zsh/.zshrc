@@ -128,3 +128,10 @@ export PATH=/usr/local/bin:$PATH
 # SHOULD BE LAST IN CONFIG | SOURCE FOR ZSH-SYNTAX-HIGHLIGHTING ADDON
 #################################################################################
 source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+#################################################################################
+# Source Aliases from ~/.zsh_aliases file
+#################################################################################
+if [ -e $HOME/.zsh_aliases ]; then
+    source $HOME/.zsh_aliases
+fi
