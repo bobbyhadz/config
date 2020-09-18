@@ -25,8 +25,6 @@
   - [**Github Dark**](https://github.com/StylishThemes/GitHub-Dark) - with
     syntax theme set to Monokai, by clicking stylus -> manage -> cogwheel next
     to Github Dark -> Github syntax theme = Monokai.
-- [**Relaxing Sounds**](https://chrome.google.com/webstore/detail/relaxing-sounds-giovesoft/gpgbpbpobbgnaognooilkmncoonaedao)
-  provides ambient sounds to focus while coding.
 - [**Gnome Shell integration**](https://chrome.google.com/webstore/detail/gnome-shell-integration/gphhapmejobijbbhgpjhcjognlahblep)
   provides integration with GNOME Shell.
 - [**Octotree**](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc)
