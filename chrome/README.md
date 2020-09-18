@@ -41,3 +41,9 @@
   enhances Twitch with new features and emotes.
 - [**Click To Remove Element**](https://chrome.google.com/webstore/detail/click-to-remove-element/jcgpghgjhhahcefnfpbncdmhhddedhnk?hl=en)
   outlines in red on hover and removes invisible adds and overlays on click.
+- [**Privacy Badger**](https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp) -
+  blocks trackers on web pages you visit.
+- [**Keyframes**](https://chrome.google.com/webstore/detail/keyframes/dalaiblmpeklkjnpeocmaojcfldmbfck?hl=en) -
+  in browser CSS animation creator.
+- [**HTML Hierarch Visualizer**](https://chrome.google.com/webstore/detail/html-hierarchy-visualizer/beaeppehjnnnidajcmalfcajahopihcb?hl=en) -
+  helps you visualize the layout of HTML elements on a webpage.
