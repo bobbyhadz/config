@@ -2,8 +2,6 @@
 
 ## Extensions
 
----
-
 - [**React Dev Tools**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
   - adds ReactJs debugging tools to the Chrome Developer Tools.
 
