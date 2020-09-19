@@ -103,3 +103,5 @@
 
 - [**Github Repository Size**](https://chrome.google.com/webstore/detail/github-repository-size/apnjnioapinblneaedefcnopcjepgkci/related)
   - Automatically adds repository size to Github's repository summary
+
+---
