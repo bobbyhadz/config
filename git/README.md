@@ -6,9 +6,15 @@
   - official release branch, `initializes CI/CD pipeline`, all commits should be
     tagged with a version number, using
     [**semantic versioning**](https://semver.org/)
+
+---
+
 - **dev**
   - integration branch for feat branches. This is a long running branch, which
     `merges with feat branches` and is `used to create feat/release branches`.
+
+---
+
 - **feat**
   - `created from dev branch`, when a feature is complete it gets merged back
     into dev. Feat branches never interact directly with master. Feat can be one
@@ -26,6 +32,9 @@
       refactor/function-name
     - **test** branches are used when adding unit/integration/e2e tests.
       **Naming convention**: test/file-name-unit
+
+---
+
 - **release**
   - `Created from dev branch`.
   - Creating a release branch `starts the release cycle`, so
@@ -39,6 +48,9 @@
       because critical updates may have been added to the release branch and
       they need to be accessible to new features. **Naming convention**:
       release/0.1.0
+
+---
+
 - **fix**
   - `created from master`, to quickly patch production releases.
   - This is the `only branch that should fork directly off of master`.
