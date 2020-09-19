@@ -2,7 +2,9 @@
 
 ## Keyboard shortcuts
 
-The Super key is the one between the Ctrl and Alt keys in the bottom left corner of the keyboard. On most keybaords, it has a Windows symbol on it, "Super" is an operating system neutral name for the Windows key.
+The Super key is the one between the Ctrl and Alt keys in the bottom left corner
+of the keyboard. On most keybaords, it has a Windows symbol on it, "Super" is an
+operating system neutral name for the Windows key.
 
 ### Terminal
 
@@ -49,7 +51,21 @@ The Super key is the one between the Ctrl and Alt keys in the bottom left corner
 
 ### Desktop
 
-Note: Workspaces refer to grouping of windows on your desktop. You can create multiple workspaces, which act like virtual desktops. Workspaces are meant to reduce clutter and make the desktop easier to navigate. For example you could have all your communication windows, such as e-mail and your chat program, on one workspace, your code editor/programming stuff on another workspace and your music player could be on a third workspace. In order to use workspaces click on Activities in the top bar, a vertical panel will appear showing workspaces in use, plus an empty workspace. This is the workspace selector. To add a workspace, drag and drop a window from an existing workspace onto the empty workspace in the workspace selector. The workspace now contains the window you have dropped, and a new empty workspace will appear below it. To remove a workspace, simply close all of its windows or move them to other workspaces.
+Workspaces refer to grouping of windows on your desktop.
+
+- You can create multiple workspaces, which act like virtual desktops.
+- Workspaces are meant to reduce clutter and make the desktop easier to
+  navigate.
+- For example you could have all your communication windows, such as e-mail and
+  your chat program, on one workspace, your code editor/programming stuff on
+  another workspace and your music player could be on a third workspace.
+- In order to use workspaces click on Activities in the top bar, a vertical
+  panel will appear showing workspaces in use, plus an empty workspace. This is
+  the workspace selector. To add a workspace, drag and drop a window from an
+  existing workspace onto the empty workspace in the workspace selector. The
+  workspace now contains the window you have dropped, and a new empty workspace
+  will appear below it. To remove a workspace, simply close all of its windows
+  or move them to other workspaces.
 
 #### Navigation
 
