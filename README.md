@@ -1,8 +1,8 @@
 # Personal configuration for
 
-- **[ubuntu](ubuntu)**
-- **[vscode](vscode)**
-- **[zsh](zsh)**
 - **[chrome](chrome)**
 - **[git](git)**
+- **[ubuntu](ubuntu)**
 - **[vim](vim)**
+- **[vscode](vscode)**
+- **[zsh](zsh)**
