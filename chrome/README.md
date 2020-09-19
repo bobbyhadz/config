@@ -4,8 +4,14 @@
 
 - [**React Dev Tools**](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi)
   - adds ReactJs debugging tools to the Chrome Developer Tools.
+
+---
+
 - [**Redux Dev Tools**](https://github.com/zalmoxisus/redux-devtools-extension)
   - adds devtools panel for redux state management.
+
+---
+
 - [**uBlock Origin**](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm/related?hl=en)
   - wide spectrum content blocker.
 - [**ColorZilla**](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp)
