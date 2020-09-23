@@ -49,8 +49,9 @@
 
 ---
 
-- [**JSONView**](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc)
-  - enables syntax highlighting and validation of JSON documents.
+- [**JSON Viewer**](https://chrome.google.com/webstore/detail/json-viewer/gbmdgpbipfallnflgajpaliibnhdgobh)
+  - enables syntax highlighting with **dark mode** and validation of JSON
+    documents.
 
 ---
 
