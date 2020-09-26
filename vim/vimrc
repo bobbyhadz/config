@@ -25,9 +25,9 @@ colorscheme monokai
 " For plugins to load correctly
 filetype plugin indent on
 
-" Set <SPACE> as leader key
+" Set "," as leader key
 nnoremap <SPACE> <Nop>
-let mapleader = " "
+let mapleader = ","
 
 " Security
 set modelines=0
