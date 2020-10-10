@@ -636,16 +636,16 @@ export const ${1:name} = (${2:arguments}) => {
 }
 ```
 
-#### `im⇥` import module
+#### `imd⇥` import module default
 
 ```js
-import ${1:module} from '${2:module}'
+import ${2:module} from '${1:module}'
 ```
 
-#### `id⇥` import destructured module
+#### `imn⇥` import module named
 
 ```js
-import {$1} from '${2:module}';
+import {$2} from '${1:module}';
 ```
 
 ### Testing
