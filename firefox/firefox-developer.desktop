@@ -1,0 +1,14 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Type=Application
+Terminal=false
+Icon=/opt/firefox/browser/chrome/icons/default/default128.png
+Icon[en_US]=/opt/firefox/browser/chrome/icons/default/default128.png
+Name=Firefox Developer Edition
+Name[en_US]=Firefox Developer Edition
+Exec=/opt/firefox/firefox
+Categories=Network;WebBrowser;Favorite;
+MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;x-scheme-handler/ftp; X-Ayatana-Desktop-Shortcuts=NewWindow;NewIncognitos;
+StartupWMClass=Firefox Developer Edition
