@@ -113,6 +113,12 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=12'
 ################################################
 export PATH=~/.local/bin:$PATH
 
+# For npm global packages without requiring sudo
+export PATH=~/.npm-global/bin:$PATH
+
+# for Firefox Developer Edition browser                                                    
+export PATH=/opt/firefox/firefox:$PATH
+
 # For Vscode - because bind CTRL + Shift + e doesn't work otherwise
 export GTK_IM_MODULE="xim"
 
