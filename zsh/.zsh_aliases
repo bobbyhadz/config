@@ -26,21 +26,37 @@ alias nid='npm i -D'
 #################################################################################
 # 💾 GIT Aliases
 #################################################################################
-alias 🍺='git checkout -b drunk'
 alias ga='git add'
 alias gaa='git add .'
+alias g-unstage='git reset HEAD --' 
 alias gcm='git commit -m'
+alias gf='git fetch'
+alias gb='git branch -a'
+alias gbd='git branch -D'
 alias gd='git diff'
 alias gd-stat='git diff --stat'   # git diff online stats - filename/lines removed or added
 alias gd-staged='git diff --cached' # git diff of staged files
-alias gi='git init'
+alias gd-word='git diff --color-words' #git diff word-wise (not line wise)
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-alias gpll='git pull'
-alias gpo='git push origin'
+alias glast='git log -1 HEAD' # last commit
+alias glo='git log --oneline -n 10'
+alias gl-stat='git log --oneline --no-merges --stat'
+alias gpll='git pull' 
+alias g-unsafe-pull-rebase='git pull --rebase --autostash'
 alias gpsh='git push'
-alias grset='git remote set-url'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gcom='git checkout master'
+alias gra='git remote add'
+alias grset='git remote set-url'
 alias grv='git remote -v'
 alias gs='echo ""; echo "*********************************************"; echo -e "DO NOT FORGET TO PULL BEFORE COMMITTING"; echo "*********************************************"; echo ""; git status'
+alias gst='git status -sb' # shows how many commits local is ahead of master
+alias grank='git shortlog -sn --no-merges' # Contributors ordered by number of merges
+alias g-reference-log='git reflog'
+alias g-branch-last-modified="git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'" # list branches sorted by last modified
+# ❌ DONT'T use this on public commits.
+alias g-unsafe-change-last-commit-message='git commit --amend' 
+alias g-unsafe-change-last-commit-files='git commit --amend --no-edit'
+alias g-unsafe-delete-last-commit-saving-files='git reset --soft HEAD~1'
+alias g-unsafe-delete-last-commit-deleting-commited-files='git reset --keep HEAD~1'
