@@ -622,6 +622,14 @@ export default function ${1:name} (${2:arguments}) {
 }
 ```
 
+#### `efd⇥` export function definition
+
+```js
+export function ${1:name} (${2:arguments}) {
+  ${0}
+}
+```
+
 #### `ec⇥` module export const
 
 ```js
