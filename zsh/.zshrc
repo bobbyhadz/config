@@ -107,6 +107,14 @@ export KEYTIMEOUT=10
 ###############################################################################
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=12'
 
+#######################################################################
+# Enable command filtering - start typing and press up or down arrows
+# and you only go through commands that match the filter
+#######################################################################
+bindkey '\eOA' history-beginning-search-backward
+bindkey '\e[A' history-beginning-search-backward
+bindkey '\eOB' history-beginning-search-forward
+bindkey '\e[B' history-beginning-search-forward    
 
 ################################################
 # GENERIC ENVIRONMENT VARIABLES
