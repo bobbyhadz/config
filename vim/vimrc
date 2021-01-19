@@ -125,6 +125,7 @@ cnoremap jk <c-c>
 
 " Remap jk to <Esc> in insert mode
 inoremap jk <Esc>
+inoremap <leader>jk ,<Esc>
 
 inoremap jl <Esc>la
 inoremap jh <Esc>i
@@ -197,6 +198,11 @@ nnoremap Y y$
 "}}}
 
 
+" normal mode maps {{{
+vnoremap J 5j
+vnoremap K 5k
+"}}}
+
 " operator maps - HAVE TO ADD TO VSCODE when supported {{{
 
 " using <c-u> to remove the range that vim may insert
@@ -256,6 +262,7 @@ onoremap ap" :<c-u>normal! F"va"<cr>
 onoremap in" :<c-u>normal! f"vi"<cr>
 " inside last double quote
 onoremap ip" :<c-u>normal! F"vi"<cr>
+
 " }}}
 
 
@@ -279,6 +286,3 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 " }}}
-
-
-
