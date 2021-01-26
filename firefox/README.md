@@ -114,7 +114,8 @@
     we'll be able to search for Firefox Developer Edition in the launcher,
     `Super + A` and **right click the icon -> add to favorites**. Create the
     _firefox-developer.desktop_ file and **paste the content of the
-    firefox-developer.desktop** file into it.
+    firefox-developer.desktop** file into it. NOTE: `firefox-developer.desktop`
+    is in the current folder.
 
     ```bash
       vim ~/.local/share/applications/firefox-developer.desktop
@@ -135,13 +136,13 @@
 > xprop
 > ```
 >
-> - click on the Firefox Developer and look for **WM_CLASS(STRING)** property
->   i.e.
+> - click on the Firefox Developer Browser Window and look for
+>   **WM_CLASS(STRING)** property i.e.
 >
 > ```
 > WM_CLASS(STRING) = "Navigator", "Firefox Developer Edition"
 > ```
 >
-> - If the output is any different than "Firefox Developer Edition", you have to
->   update the `StartupWMClass` property in the `firefox-developer.desktop` file
->   to be equal to the output class without the quotes.
+> - If the output is any different than `"Firefox Developer Edition"`, you have
+>   to update the `StartupWMClass` property in the `firefox-developer.desktop`
+>   file to be equal to the output class without the quotes.
