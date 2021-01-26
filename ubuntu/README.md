@@ -73,6 +73,16 @@ The Super key is the one between the Ctrl and Alt keys in the bottom left corner
 of the keyboard. On most keybaords, it has a Windows symbol on it, "Super" is an
 operating system neutral name for the Windows key.
 
+## Ubuntu setup after installation
+
+- install chrome
+- install gnome tweak tools
+- go to `https://extensions.gnome.org` and install the browser plugin, then
+  install `Smart transparent topbar`, `Transparent window moving` and
+  `User themes` extensions. `Transparent Window Moving` is set at `opacity` -
+  200, install `Dash to Dock` extension to make your bottom dock smaller.
+- set `Caps lock` to `Control`
+
 ### Terminal
 
 #### Terminal Window Tabs
