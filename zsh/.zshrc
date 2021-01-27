@@ -130,6 +130,10 @@ export PATH=/opt/firefox/firefox:$PATH
 # For Vscode - because bind CTRL + Shift + e doesn't work otherwise
 export GTK_IM_MODULE="xim"
 
+# For NVM - node version manager
+export NVM_DIR="~/.nvm"
+source ~/.nvm/nvm.sh
+
 
 ########################################################
 # INITIALIZE AUTOCOMPLETION FOR AWS CLI
