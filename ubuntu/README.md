@@ -1,5 +1,27 @@
 # Ubuntu configuration
 
+## For scroll speed
+
+Copy the `.imwheelrc` file from the current directory into your `~` (home)
+directory and run:
+
+```bash
+sudo apt install imwheel
+imwheel -b "4 5"
+```
+
+You can adjust the speed by editing the file according to the comments and
+restarting `imwheelrc` by:
+
+```bash
+killall imwheel
+imwheel -b "4 5"
+```
+
+The command only influences the mouse 4 and 5 buttons, which are scroll up and
+scroll down, otherwise `imwheel` would block your `side` mouse buttons, like
+back and forth, etc.
+
 ## How I installed ubuntu on my Acer aspire 7, A715 laptop
 
 When it was freezing on the Acer screen at boot time, I had to:
