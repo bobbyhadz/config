@@ -22,6 +22,9 @@ The command only influences the mouse 4 and 5 buttons, which are scroll up and
 scroll down, otherwise `imwheel` would block your `side` mouse buttons, like
 back and forth, etc.
 
+Then add `imwheel` to your startup applications, don't forget to use the command
+`imwheel -b "4 5"` so you don't block your mouse's side buttons.
+
 ## How I installed ubuntu on my Acer aspire 7, A715 laptop
 
 When it was freezing on the Acer screen at boot time, I had to:
