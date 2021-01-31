@@ -13,7 +13,7 @@
 # Speed up Chrome scrolling
 # Button4 is scrolling up, Button5 is scrolling down
 # to change the speed, edit the number after the comma on the lines starting
-# with None, Up, ... and None, Down, ...
+# with None
 "^google-chrome$"
   None, Up, Button4, 4
   None, Down, Button5, 4
@@ -31,3 +31,14 @@
   Shift_L,   Down,  Shift_L|Button5, 4
   Control_L, Up,    Control_L|Button4
   Control_L, Down,  Control_L|Button5
+
+# Speed up VSCODE scrolling
+"^code$"
+  None, Up, Button4, 3
+  None, Down, Button5, 3
+  Shift_L,   Up,    Shift_L|Button4, 4
+  Shift_L,   Down,  Shift_L|Button5, 4
+  Control_L, Up,    Control_L|Button4
+  Control_L, Down,  Control_L|Button5
+
+
