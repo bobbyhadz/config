@@ -15,8 +15,8 @@
 # to change the speed, edit the number after the comma on the lines starting
 # with None, Up, ... and None, Down, ...
 "^google-chrome$"
-  None, Up, Button4, 6
-  None, Down, Button5, 6
+  None, Up, Button4, 4
+  None, Down, Button5, 4
   Shift_L,   Up,    Shift_L|Button4, 4
   Shift_L,   Down,  Shift_L|Button5, 4
   Control_L, Up,    Control_L|Button4
@@ -25,8 +25,8 @@
 
 # Speed up Firefox scrolling
 "^Navigator$"
-  None, Up, Button4, 6
-  None, Down, Button5, 6
+  None, Up, Button4, 4
+  None, Down, Button5, 4
   Shift_L,   Up,    Shift_L|Button4, 4
   Shift_L,   Down,  Shift_L|Button5, 4
   Control_L, Up,    Control_L|Button4
