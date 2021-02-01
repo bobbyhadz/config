@@ -198,10 +198,15 @@ nnoremap Y y$
 "}}}
 
 
-" normal mode maps {{{
+" visual mode maps {{{
 vnoremap J 5j
 vnoremap K 5k
+
+" don't exit selection when indenting/outdenting in visual mode
+vnoremap > >gv
+vnoremap < <gv
 "}}}
+
 
 " operator maps - HAVE TO ADD TO VSCODE when supported {{{
 
@@ -216,7 +221,6 @@ onoremap anW :<c-u>normal! WvaW<cr>
 onoremap inw :<c-u>normal! wviw<cr>
 " delete inner next Word
 onoremap inW :<c-u>normal! WviW<cr>
-
 
 " around next bracket
 onoremap an[ :<c-u>normal! f[va[<cr>
