@@ -1,5 +1,19 @@
 # Ubuntu configuration
 
+# For Clipboard Manager
+
+I use `Clipboard Indicator`, which can be installed here
+[Gnome Extensions - Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/).
+
+Then you have to use `gnome tweak tools` to enable the extension
+`Clipboard Indicator` in the `Extensions` screen.
+
+It has ability to search through history, bookmark or remove clipboard items,
+private mode to hide clipboard content. It has nice kbd shortcuts, you can edit
+in the settings.
+
+Cons are - it `cannot store images` or `text formatting`.
+
 ## For scroll speed
 
 Copy the `.imwheelrc` file from the current directory into your `~` (home)
