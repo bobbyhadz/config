@@ -5,6 +5,9 @@
 I use `Clipboard Indicator`, which can be installed here
 [Gnome Extensions - Clipboard Indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/).
 
+Github page of the extension can be found at (Clipboard indicator -
+Github)[https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator]
+
 Then you have to use `gnome tweak tools` to enable the extension
 `Clipboard Indicator` in the `Extensions` screen.
 
