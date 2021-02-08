@@ -1,0 +1,526 @@
+{
+  /*******************************************
+   * VIM
+   *******************************************/
+
+  // // Insert Mode
+  "vim.insertModeKeyBindings": [
+    //   // exit insert mode
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<leader>", "j", "k"],
+      "after": [",", "<Esc>"]
+    }
+  ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    //   // move one char to the left
+    {
+      "before": ["j", "l"],
+      "after": ["<Esc>", "l", "a"]
+    },
+    // move one char to the right
+    {
+      "before": ["j", "h"],
+      "after": ["<Esc>", "i"]
+    },
+    // move to end of line
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>", "A"]
+    },
+    // delete next character
+    {
+      "before": ["j", "x"],
+      "after": ["<Esc>", "l", "x", "i"]
+    },
+    // add a new line
+    {
+      "before": ["j", "n"],
+      "after": ["<Esc>", "o"]
+    },
+    // delete a line
+    {
+      "before": ["<leader>", "d", "d"],
+      "after": ["<Esc>", "d", "d", "i"]
+    }
+  ],
+  // // Normal Mode
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["bookmarks.toggle"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["bookmarks.list"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // add new lines staying in normal mode
+    {
+      "before": ["g", "o"],
+      "after": ["o", "<Esc>", "<Esc>"]
+    },
+    {
+      "before": ["g", "O"],
+      "after": ["O", "<Esc>", "<Esc>", "j"]
+    },
+    // show search history
+    {
+      "before": ["<leader>", "/"],
+      "after": ["q", "/"]
+    },
+    // switch between left and right screen ctrl-l ctrl-h
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+    //   // only leave current tab open
+    {
+      "before": ["<Leader>", "t", "o"],
+      "commands": [":tabo"]
+    },
+    // capital Y now copies til end of line
+    {
+      "before": ["Y"],
+      "after": ["y", "$"]
+    },
+    // capital J and K move 5 lines at a time
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    }
+  ],
+  // Visual mode
+  "vim.visualModeKeyBindings": [],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    // indent and outdent code in visual mode with '>' '<'
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    // capital J and K move 5 lines at a time
+    {
+      "before": ["J"],
+      "after": ["5", "j"]
+    },
+    {
+      "before": ["K"],
+      "after": ["5", "k"]
+    }
+  ],
+
+  // in visual mode, start a search with * or # using the current selection
+  "vim.visualstar": true,
+
+  // enable /g global replace by default
+  "vim.gdefault": true,
+
+  // remap vim leader to '<comma>'
+  "vim.leader": ",",
+
+  // change cursor to underline in replace mode
+  "vim.cursorStylePerMode.replace": "underline",
+
+  // highlight copied text on yank
+  "vim.highlightedyank.enable": true,
+
+  // Uses a hack to move around code folds properly
+  // TODO: this could be it??
+  // "vim.foldfix": true,
+
+  "vim.handleKeys": {
+    "<C-f>": false
+  },
+
+  // for performance
+  "vim.statusBarColorControl": false,
+
+  /*******************************************
+   * MISC
+   *******************************************/
+
+  // VS Code dispatches based on key code i.e. Caps lock is Ctrl (same as pc config)
+  "keyboard.dispatch": "keyCode",
+
+  // Color Theme
+  "workbench.colorTheme": "Monokai",
+
+  // Hide tips for vscode help
+  "workbench.tips.enabled": false,
+
+  // Display bar with explorer and extensions
+  "workbench.activityBar.visible": true,
+
+  // Open a new file when opening an empty workspace
+  "workbench.startupEditor": "newUntitledFile",
+
+  // Display a yellow top border on the active tab
+  "workbench.colorCustomizations": {
+    "tab.activeBorderTop": "#fbff00",
+    "editorIndentGuide.activeBackground": "#fff"
+  },
+
+  // Hide Open editors in Explorer
+  "explorer.openEditors.visible": 0,
+
+  // Display git diff editor side by side
+  "diffEditor.renderSideBySide": true,
+
+  // when no changes are stages and you issue commit, commit all changes
+  "git.enableSmartCommit": true,
+
+  // languages which should be validated by eslint
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // Patterns to exclude when fulltext searching
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true
+  },
+
+  // automatically save changes to files after a delay
+  // Currently turned off to avoid causing infinite loops with react's useEffect
+  // "files.autoSave": "afterDelay",
+
+  // delay for automatically saving changes to files is 5 seconds
+  // "files.autoSaveDelay": 5000,
+
+  // don't show recommended extensions by default
+  "extensions.ignoreRecommendations": true,
+
+  /*******************************************
+   * Editor
+   *******************************************/
+  //  Shown snippet suggestions on top of other suggestions
+  "editor.snippetSuggestions": "top",
+
+  //  render a vertical line after a certain number of vertical characters
+  "editor.rulers": [80],
+
+  // set default formatter to prettier-vscode
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // suggest autocompletion based on consistent results
+  "editor.suggestSelection": "first",
+
+  // Font family
+  "editor.fontFamily": "Fira Code, Consolas",
+
+  // Enable font Ligatures
+  "editor.fontLigatures": true,
+
+  // don't use enter to accept suggestions
+  "editor.acceptSuggestionOnEnter": "off",
+
+  // Use predefined indentation
+  "editor.detectIndentation": false,
+
+  // Remove indentation dots
+  "editor.renderWhitespace": "none",
+
+  // Set indentation tab size to 2
+  "editor.tabSize": 2,
+
+  // Automatically close brackers
+  "editor.autoClosingBrackets": "beforeWhitespace",
+
+  // Automatically close Quotes
+  "editor.autoClosingQuotes": "beforeWhitespace",
+
+  // Sort imports and remove unused imports when pressing CTRL + S
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+
+  // ZOOM OUT/IN with CTRL + Mouse wheel
+  "editor.mouseWheelZoom": true,
+
+  // Hide Minimap feature
+  "editor.minimap.enabled": false,
+
+  // Manage multiple cursors with CTRL + <keybinding>
+  "editor.multiCursorModifier": "ctrlCmd",
+
+  // Wrap long strings on multiple lines
+  "editor.wordWrap": "on",
+
+  // Highlight occurances of words, when the cursor is on them
+  "editor.occurrencesHighlight": true,
+
+  // Don't show Emmet snippets in Typescript files
+  // "emmet.excludeLanguages": ["typescriptreact", "javascriptreact"],
+
+  // Don't show emmet suggestions
+  "emmet.showExpandedAbbreviation": "inMarkupAndStylesheetFilesOnly",
+
+  // Enable emmet in JSX
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  /*******************************************
+   * JAVASCRIPT and TYPESCRIPT
+   *******************************************/
+
+  // update imports on file move
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // enable semantic checks for js and ts files
+  // "javascript.implicitProjectConfig.checkJs": true,
+
+  // configure editor settings to be overriden for a javascript
+  "[javascript]": {
+    // explicit font ligatures settings
+    "editor.fontLigatures": "'ss01', 'ss03', 'ss05', 'ss19', 'calt'",
+
+    // set prettier as default code formatter
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed"
+  },
+
+  // update imports on file move
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed"
+  },
+  /*******************************************
+   * JSON and JSONC
+   *******************************************/
+
+  // editor settings to be overriden for a json
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // editor settings to be overriden for jsonc
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  /*******************************************
+   * HTML
+   *******************************************/
+
+  // editor settings to be overriden for html
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  /*******************************************
+   * YAML
+   *******************************************/
+  // Always wrap prose if it exceeds the print width
+  "yaml.format.proseWrap": "always",
+
+  // set prettier as default formatter
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // add custom tags to YAML, so cloudformation works with linters
+  "yaml.customTags": [
+    "!And",
+    "!And sequence",
+    "!If",
+    "!If sequence",
+    "!Not",
+    "!Not sequence",
+    "!Equals",
+    "!Equals sequence",
+    "!Or",
+    "!Or sequence",
+    "!FindInMap",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Join",
+    "!Join sequence",
+    "!Cidr",
+    "!Ref",
+    "!Ref sequence",
+    "!Sub",
+    "!Sub sequence",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!ImportValue sequence",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Split sequence"
+  ],
+
+  // disable yaml validation, so cfn-lint does it
+  "yaml.validate": false,
+
+  // use single quotes instead of double quotes
+  "yaml.format.singleQuote": true,
+
+  /*******************************************
+   * Indenticator extension
+   *******************************************/
+
+  // highlight the indent of the block for the current line
+  // "indenticator.showIndentGuide": true,
+  // "indenticator.color.dark": "white",
+
+  /*******************************************
+   * IndentRainbow extension
+   *******************************************/
+
+  // only enable for files with yaml or yml extension
+  "indentRainbow.includedLanguages": ["yaml", "yml"],
+
+  /*******************************************
+   * Settings Sync Extention
+   *******************************************/
+
+  // download the settings from the gist, even if you have the latest settings
+  "sync.forceDownload": true,
+
+  // GitHub GIST ID for settings sync
+  "sync.gist": "135c49fe0fb08b1cabd65566d49db6e8",
+
+  /*******************************************
+   * Prettier exntension
+   *******************************************/
+
+  // insert trailing commas in objects and arrays
+  "prettier.trailingComma": "all",
+
+  // use single quotes instead of double quotes
+  "prettier.singleQuote": true,
+
+  // wrap prose over multiple lines
+  "prettier.proseWrap": "always",
+
+  // remove parenthesis from sole arrow functions parameters
+  "prettier.arrowParens": "avoid",
+
+  /*******************************************
+   * vscode-cfn-lint extension
+   *******************************************/
+
+  // don't validate cloudformation using the json schema
+  "cfnLint.validateUsingJsonSchema": false,
+  "window.menuBarVisibility": "toggle",
+  "gitlens.codeLens.authors.enabled": false,
+
+  /*******************************************
+   * Live Sass Compiler extension
+   *******************************************/
+  "liveSassCompile.settings.formats": [
+    {
+      // should be minified when compiled
+      "format": "compressed",
+      // extension name for the minified file .min.css or .css
+      "extensionName": ".css",
+      // Gets compiled to /css folder in the root directory
+      "savePath": "/css"
+    }
+  ],
+  // Don't generate source maps for scss files
+  "liveSassCompile.settings.generateMap": false,
+
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.editor.showTabs": true,
+  "window.titleBarStyle": "custom",
+  "workbench.editor.highlightModifiedTabs": true,
+  "tailwindCSS.emmetCompletions": true,
+  "aws.telemetry": false,
+  "aws.profile": "profile:amplify-user-1",
+  "cSpell.enableFiletypes": [
+    "!asciidoc",
+    "!c",
+    "!cpp",
+    "!csharp",
+    "!css",
+    "!git-commit",
+    "!go",
+    "!graphql",
+    "!handlebars",
+    "!haskell",
+    "!html",
+    "!jade",
+    "!java",
+    "!javascript",
+    "!javascriptreact",
+    "!json",
+    "!jsonc",
+    "!latex",
+    "!less",
+    "!php",
+    "!pug",
+    "!python",
+    "!restructuredtext",
+    "!rust",
+    "!scala",
+    "!scss",
+    "!typescript",
+    "!typescriptreact",
+    "!yaml",
+    "!yml"
+  ],
+  "prettier.bracketSpacing": false,
+  "editor.formatOnSave": true,
+  "git.autofetch": true,
+  "editor.linkedEditing": true,
+  // TODO: not using vimrc file to try for perf
+  // "vim.vimrc.enable": true,
+  // "vim.vimrc.path": "$HOME/.vim/vimrc",
+
+  "workbench.iconTheme": "material-icon-theme",
+  "gitlens.currentLine.enabled": false,
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": true,
+  "vscode-neovim.neovimExecutablePaths.linux": "/snap/bin/nvim"
+
+  /*******************************************
+   * DISABLED EXTENSIONS
+   *******************************************/
+
+  /*******************************************
+   * Intellicode Extension
+   *******************************************/
+
+  // enable intellicode to override vscode suggestselection
+  // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  /*******************************************
+   * AWS Toolkit for Visual Studio Code extension
+   *******************************************/
+
+  // location of sam-cli on your PC
+  // "aws.samcli.location": "/home/linuxbrew/.linuxbrew/bin/sam",
+
+  // use the default AWS profile
+  // "aws.profile": "default",
+}
+

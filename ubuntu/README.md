@@ -1,5 +1,24 @@
 # Ubuntu configuration
 
+# Make Tracker miner ignore node_modules and venv direcotires so it doesn't spike your CPU
+
+BlogPost:
+[Ubuntu Tracker Ignore](https://bobbyhadz.com/blog/ubuntu-tracker-ignore)
+
+To see directories ignored by default type into your terminal:
+
+```bash
+gsettings get org.freedesktop.Tracker.Miner.Files ignored-directories
+```
+
+Now add `node_modules` and `venv` and restart tracker:
+
+```bash
+gsettings set org.freedesktop.Tracker.Miner.Files ignored-directories "['po', 'CVS', 'core-dumps', 'lost+found', 'node_modules', 'venv']"
+
+tracker reset -r
+```
+
 # For Clipboard Manager
 
 I use `Clipboard Indicator`, which can be installed here
