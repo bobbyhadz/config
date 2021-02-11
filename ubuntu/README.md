@@ -61,6 +61,15 @@ back and forth, etc.
 Then add `imwheel` to your startup applications, don't forget to use the command
 `imwheel -b "4 5"` so you don't block your mouse's side buttons.
 
+The command used to get the name of the service to set the scroll speed for is:
+
+```
+xprop WM_CLASS | grep -o '"[^"]*"' | head -n 1
+```
+
+After you enter it in the terminal you just click on the application and the
+name is written in the terminal.
+
 ## How I installed ubuntu on my Acer aspire 7, A715 laptop
 
 When it was freezing on the Acer screen at boot time, I had to:
