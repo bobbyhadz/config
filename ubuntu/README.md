@@ -158,6 +158,17 @@ name is written in the terminal.
 - [Github Desktop](https://dev.to/rahedmir/is-github-desktop-available-for-gnu-linux-4a69) -
   gui for git/github.
 
+- **Visual Studio Code** -
+
+  ```bash
+  sudo snap install --classic code
+  ```
+
+  There is a problem with the `Ctrl+shift+e` and `Ctrl+shift+u` bindings being
+  overwritten by ubuntu. To fix this in Ubuntu open `Language Support` >
+  `Language tab` > select `XIM` in **keyboard input method system** dropdown,
+  then **reboot**.
+
 ---
 
 ## Custom and default kbd shortcuts I use often
