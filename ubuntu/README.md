@@ -138,7 +138,7 @@ name is written in the terminal.
 - [Mongodb Compass](https://docs.mongodb.com/compass/master/install/).
   Connecting to mongodb databases.
 
-- [Postman](https://www.postman.com/).
+- [Postman](https://www.postman.com/)
 
   ```bash
   sudo snap install postman
