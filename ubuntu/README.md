@@ -77,25 +77,51 @@ name is written in the terminal.
 - [Switcher](https://extensions.gnome.org/extension/973/switcher/) - switch
   between application windows by typing the name.
 
+  - Switcher settings - **Hotkey to activate** - `Super+w`, **font size** -
+    `20`, **Icon size** - `26`, **width %** - `40`, tick
+    `never show usage tips`.
+
 - Set `Caps lock` to `Control`. Click `Keyboard & Mouse` ->
   `Additional Layout Options` -> `Caps Lock behavior` ->
   `Caps Lock is also a Ctrl`
 
 - **Start up applications**:
-  [Albert](https://albertlauncher.github.io/installing/) and
-  [Wallch](https://www.linuxhelp.com/how-to-install-wallch-in-ubuntu).
+  [Albert](https://albertlauncher.github.io/installing/) and **Wallch**. For
+  **Wallch** do:
+
+  ```
+  sudo apt-get update
+  sudo apt-get install wallch
+  ```
 
 - **Workspaces** - Select `Static Workspaces` and set it to 5. Select
   `Workspaces span displays`.
 
 ---
 
-## Install some applications
+## Install some applications, utilities
+
+- **Gnome Tweak Tools** - extends ubuntu configuration
+
+  ```bash
+  sudo apt-get update
+  sudo apt-add-repository universe
+  sudo apt install gnome-tweak-tool
+  ```
+
+- **dconf-editor** - gui for editing ubuntu configuration like keyboard
+  shortcuts, etc.
+
+  ```bash
+  sudo add-apt-repository universe
+  sudo apt update
+  sudo apt install dconf-cli dconf-editor
+  ```
 
 - [Albert](https://albertlauncher.github.io/installing/). Launcher for quick
   application / search / files/ bookmarks lookup. Current `Albert` settings
   are - `Applications`, `Calculator`, `Chromium`, `Files` - for files I have
-  deselected all and I use it to open a directory in natuilus, by typing
+  deselected all and I use it to open a directory in nautilus, by typing
   `/path/to/directory`, `Terminal` - execute terminal commands by starting with
   `>`, `WebSearch` - search google, youtube, github, etc.
 
@@ -131,4 +157,21 @@ name is written in the terminal.
 
 ### Custom:
 
+- **Workspaces tip** - for workspaces to span multiple monitors - open gnome
+  tweak tools, go to **Workspaces** and set **Display handling** to **Workspaces
+  span displays**.
+- **Switch to workspace 1** - `Ctrl+Alt+j`
+- **Switch to workspace 2** - `Ctrl+Alt+k`
+- **Switch to workspace 3** - `Ctrl+Alt+l`
+- **Switch to workspace 4** - `Ctrl+Alt+;`
+- **Switch to workspace 5** - `Ctrl+Alt+'` - has to be set using `dconf-editor`
+- **Toggle window on all workspaces or one** - `Ctrl+Alt+/`
+- **Move window** - `Super+m`
+- **Resize window** - `Super+r`
+- **Albert Launcher** - `Ctrl+Alt+a`
+- **Switcher launch** - `Super+w`
+
 ### Default:
+
+- **Show workspaces split** - `Super+s`
+- **Switch between windows from the same application** - **alt+`**
