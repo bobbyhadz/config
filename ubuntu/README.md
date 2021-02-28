@@ -169,6 +169,33 @@ name is written in the terminal.
   `Language tab` > select `XIM` in **keyboard input method system** dropdown,
   then **reboot**.
 
+- **Tmux terminal**
+
+  ```bash
+  sudo apt update
+
+  sudo apt install tmux
+
+  sudo apt install powerline -y
+
+  # install the powerline fonts
+  git clone https://github.com/powerline/fonts.git --depth=1
+  cd fonts
+  ./install.sh
+  cd ..
+  rm -rf fonts
+
+  # add the powerline status bar to tmux
+  # edit the tmux config file and paste the below lines in it
+  vim ~/.tmux.conf
+
+  # enable the powerline status bar
+  run-shell 'powerline-config tmux setup'
+
+  # Set tmux mode to vi (default is emac)
+  set-window-option -g mode-keys vi
+  ```
+
 ---
 
 ## Custom and default kbd shortcuts I use often
