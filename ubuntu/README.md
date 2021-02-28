@@ -118,7 +118,12 @@ name is written in the terminal.
   sudo apt install dconf-cli dconf-editor
   ```
 
-  After installing **dconf-editor** - set up the shortcuts
+  After installing **dconf-editor** - set up the kbd shortcuts
+
+  ```bash
+  sudo chmod +x ./ubuntu/dconf-kbd-shortcuts.sh
+  ./ubuntu/dconf-kbd-shortcuts.sh
+  ```
 
 - [Albert](https://albertlauncher.github.io/installing/). Launcher for quick
   application / search / files/ bookmarks lookup. Current `Albert` settings
