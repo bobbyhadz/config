@@ -118,6 +118,10 @@ name is written in the terminal.
   sudo apt install dconf-cli dconf-editor
   ```
 
+  Open dconf editor and set that you want to save the ubuntu application session
+  (doesn't work on ubuntu 20.04, hopefully works in the future): Click `org` =>
+  `gnome` => `gnome-session` => tick `auto-save-session`.
+
   After installing **dconf-editor** - set up the kbd shortcuts
 
   ```bash

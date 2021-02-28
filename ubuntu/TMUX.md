@@ -1,3 +1,10 @@
+# tmux
+
+tmux **runs your window in a process**, that's **not tied to the session**. If
+you ssh to a server, launch tmux, execute commands and the ssh connection
+crashes, the process doesn't end, you can just reconnect and continue working in
+the same session.
+
 # tmux shortcuts:
 
 The default **prefix** for `tmux` is `ctrl + b`.
@@ -14,15 +21,34 @@ The default **prefix** for `tmux` is `ctrl + b`.
 
 **create pane to the right**:
 
-- `ctrl + b` -> `shift + 5`
+- `ctrl + b` -> `%`
 
 **create pane to the bottom**:
 
-- `ctrl + b` -> `shift + '`
+- `ctrl + b` -> `"`
 
-**move between panes**:
+**navigate between panes**:
 
-- `ctrl + b` -> `left arrow` / `right arrow` / `top arrow` / `bottom arrow`
+- `ctrl + b` -> `left arrow` / `right arrow` / `top arrow` / `bottom arrow` =>
+  Notice that the `active` pane has a green outline around it.
+
+**toggle focus a pane, hiding the other panes**:
+
+- `ctrl + b` -> `z` => Focuses a pane, hiding the other panes. Simply press it
+  again to show/hide.
+
+**move a pane to the left / right**
+
+- `ctrl + b` => `}` - move pane to the right
+- `ctrl + b` => `{` - move pane to the left
+
+**change layout between panes**
+
+- `ctrl + b` => `space` => click it until you get the desired layout
+
+**resize a pane**
+
+- `HOLD ctrl + b` -> `arrow keys` to resize in a particular direction.
 
 **close a pane**:
 
