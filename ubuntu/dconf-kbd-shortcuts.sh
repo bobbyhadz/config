@@ -17,5 +17,10 @@ dconf write /org/gnome/desktop/wm/keybindings/begin-resize "['<Super>r']"
 dconf write /org/gnome/desktop/wm/keybindings/cycle-windows "['<Primary><Alt>bracketright']"
 dconf write /org/gnome/desktop/wm/keybindings/cycle-windows-backward "['<Primary><Shift><Alt>bracketright']"
 
+# execution:
+# sudo chmod +x ./dconf-kbd-shortcuts.sh
+# ./dconf-kbd-shortcuts.sh
 
+# You can read hotkey format via:
+# dconf read /org/gnome/desktop/wm/keybindings/switch-to-workspace-1
 
