@@ -40,7 +40,8 @@ plugins=(
 	npm
 	zsh-autosuggestions
 	zsh-completions
-    vi-mode
+  vi-mode
+  jump
 )
 
 source $ZSH/oh-my-zsh.sh

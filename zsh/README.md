@@ -62,3 +62,9 @@ zsh-completions vi-mode)
 - [**zsh-completions**](https://github.com/zsh-users/zsh-completions)
   - plugin provides additional completion scripts that are not available in zsh
     yet.
+
+---
+
+- [**jump**](https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/jump)
+  - Jump to directory based on manually added marks for very fast terminal
+    navigation.
