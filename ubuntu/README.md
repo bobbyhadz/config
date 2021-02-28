@@ -118,6 +118,8 @@ name is written in the terminal.
   sudo apt install dconf-cli dconf-editor
   ```
 
+  After installing **dconf-editor** - set up the shortcuts
+
 - [Albert](https://albertlauncher.github.io/installing/). Launcher for quick
   application / search / files/ bookmarks lookup. Current `Albert` settings
   are - `Applications`, `Calculator`, `Chromium`, `Files` - for files I have
@@ -160,14 +162,20 @@ name is written in the terminal.
 - **Workspaces tip** - for workspaces to span multiple monitors - open gnome
   tweak tools, go to **Workspaces** and set **Display handling** to **Workspaces
   span displays**.
-- **Switch to workspace 1** - `Ctrl+Alt+j`
-- **Switch to workspace 2** - `Ctrl+Alt+k`
-- **Switch to workspace 3** - `Ctrl+Alt+l`
-- **Switch to workspace 4** - `Ctrl+Alt+;`
-- **Switch to workspace 5** - `Ctrl+Alt+'` - has to be set using `dconf-editor`
-- **Toggle window on all workspaces or one** - `Ctrl+Alt+/`
-- **Move window** - `Super+m`
-- **Resize window** - `Super+r`
+- **Keyboard shortcuts** with 🤖 next to them are set by the
+  `dconf-kbd-shortcuts.sh` script from the current directory, upon script
+  execution.
+- **Switch to workspace 1 🤖** - `Ctrl+Alt+j`
+- **Switch to workspace 2 🤖** - `Ctrl+Alt+k`
+- **Switch to workspace 3 🤖** - `Ctrl+Alt+l`
+- **Switch to workspace 4 🤖** - `Ctrl+Alt+;` 🤖
+- **Switch to workspace 5 🤖** - `Ctrl+Alt+'` - has to be set using
+  `dconf-editor`
+- **Toggle window on all workspaces or one 🤖** - `Ctrl+Alt+/`
+- **Move window 🤖** - `Super+m`
+- **Resize window 🤖** - `Super+r` 🤖
+- **Switch between windows in the current workspace 🤖** - `Ctrl+Alt+]` and
+  `Ctrl+Alt+shift+]` for backwards movement.
 - **Albert Launcher** - `Ctrl+Alt+a`
 - **Switcher launch** - `Super+w`
 
