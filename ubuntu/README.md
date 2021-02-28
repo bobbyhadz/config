@@ -212,10 +212,12 @@ name is written in the terminal.
 - **Keyboard shortcuts** with 🤖 next to them are set by the
   `dconf-kbd-shortcuts.sh` script from the current directory, upon script
   execution.
-- **Switch to workspace 1 🤖** - `Ctrl+Alt+j`
-- **Switch to workspace 2 🤖** - `Ctrl+Alt+k`
-- **Switch to workspace 3 🤖** - `Ctrl+Alt+l`
-- **Switch to workspace 4 🤖** - `Ctrl+Alt+;` 🤖
+- **Switch to workspace 1 🤖** - `Ctrl+Alt+j`. vscode / chrome for localhost
+  (set to visible on all workspaces on right monitor)
+- **Switch to workspace 2 🤖** - `Ctrl+Alt+k`. terminal / chrome for googling
+  around
+- **Switch to workspace 3 🤖** - `Ctrl+Alt+l`. gedit / nautilus
+- **Switch to workspace 4 🤖** - `Ctrl+Alt+;`. thunderbird for emails
 - **Switch to workspace 5 🤖** - `Ctrl+Alt+'` - has to be set using
   `dconf-editor`
 - **Move window to workspace 1 🤖** - `Ctrl+Alt+1`
