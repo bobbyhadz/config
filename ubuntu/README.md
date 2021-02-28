@@ -187,6 +187,11 @@ name is written in the terminal.
 - **Switch to workspace 4 🤖** - `Ctrl+Alt+;` 🤖
 - **Switch to workspace 5 🤖** - `Ctrl+Alt+'` - has to be set using
   `dconf-editor`
+- **Move window to workspace 1 🤖** - `Ctrl+Alt+1`
+- **Move window to workspace 2 🤖** - `Ctrl+Alt+2`
+- **Move window to workspace 3 🤖** - `Ctrl+Alt+3`
+- **Move window to workspace 4 🤖** - `Ctrl+Alt+4`
+- **Move window to workspace 5 🤖** - `Ctrl+Alt+5`
 - **Toggle window on all workspaces or one 🤖** - `Ctrl+Alt+/`
 - **Move window 🤖** - `Super+m`
 - **Resize window 🤖** - `Super+r` 🤖
