@@ -204,6 +204,11 @@ name is written in the terminal.
   set-window-option -g mode-keys vi
   ```
 
+- [Linux Window Session Manager](https://dev.to/johannesjo/restore-applications-and-their-positions-from-the-command-line-on-linux-desktops-4plk) -
+  Saves the layout of windows and manages them with one liner commands. Easy
+  Save / Restore session functionality -
+  [Github link](https://github.com/johannesjo/linux-window-session-manager)
+
 ---
 
 ## Custom and default kbd shortcuts I use often
