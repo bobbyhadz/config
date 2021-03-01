@@ -122,18 +122,19 @@ bindkey '\e[B' history-beginning-search-forward
 ################################################
 export PATH=~/.local/bin:$PATH
 
-# For npm global packages without requiring sudo
-export PATH=~/.npm-global/bin:$PATH
-
 # for Firefox Developer Edition browser                                                    
 export PATH=/opt/firefox/firefox:$PATH
 
 # For Vscode - because bind CTRL + Shift + e doesn't work otherwise
 export GTK_IM_MODULE="xim"
+alias code='GTK_IM_MODULE="xim" code'
 
 # For NVM - node version manager
-export NVM_DIR="~/.nvm"
-source ~/.nvm/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+# This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+ # This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
 
 
 ########################################################
@@ -154,3 +155,10 @@ source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 if [ -e $HOME/.zsh_aliases ]; then
     source $HOME/.zsh_aliases
 fi
+
+#################################################################################
+# Setup autocompletion for linux window session manager
+#################################################################################
+# begin lwsm completion
+. <(lwsm --completion)
+# end lwsm completion
