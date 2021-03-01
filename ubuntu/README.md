@@ -101,6 +101,10 @@ name is written in the terminal.
 
 ## Install some applications, utilities
 
+- [Node version manager](https://github.com/nvm-sh/nvm#installing-and-updating) -
+  don't install `node`, just install `nvm`, it's way easier to use, update,
+  handle permissions, etc.
+
 - **Gnome Tweak Tools** - extends ubuntu configuration
 
   ```bash
