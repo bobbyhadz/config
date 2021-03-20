@@ -5,5 +5,4 @@
 - **[git](git)**
 - **[ubuntu](ubuntu)**
 - **[vim](vim)**
-- **[vscode](vscode)**
 - **[zsh](zsh)**

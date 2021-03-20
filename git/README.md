@@ -58,7 +58,3 @@
     `gets merged in master, dev and the current release branch`.
     - Master then gets tagged with an updated version number. **Naming
       convention**: fix/close-modal-on-overlay-click
-
-## Git Aliases - TODO:
-
-## Commonly used commands - TODO:
