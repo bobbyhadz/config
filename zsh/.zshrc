@@ -63,13 +63,13 @@ stty -ixon
 # VIM CURSOR AND MODE VISUALS
 #######################################################################
 function zle-line-init zle-keymap-select {
-    #######################################################################
-    # SHOW VIM MODE IN COMMAND PROMPT
-    #######################################################################
-    RPS1="${${KEYMAP/vicmd/-- NORMAL --}/(main|viins)/-- INSERT --}"
-    RPS2=$RPS1
-
-
+#    #######################################################################
+#    # SHOW VIM MODE IN COMMAND PROMPT
+#    #######################################################################
+#    RPS1="${${KEYMAP/vicmd/-N-}/(main|viins)/-I-}"
+#    RPS2=$RPS1
+#
+#
     #######################################################################
     # UPDATE VI-MODE CURSOR BASED ON MODE
     #######################################################################
@@ -132,9 +132,10 @@ alias code='GTK_IM_MODULE="xim" code'
 # For NVM - node version manager
 export NVM_DIR="$HOME/.nvm"
 # This loads nvm
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
  # This loads nvm bash_completion
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
+
 
 
 ########################################################
@@ -156,9 +157,41 @@ if [ -e $HOME/.zsh_aliases ]; then
     source $HOME/.zsh_aliases
 fi
 
+
 #################################################################################
 # Setup autocompletion for linux window session manager
 #################################################################################
 # begin lwsm completion
-. <(lwsm --completion)
+#. <(lwsm --completion)
 # end lwsm completion
+
+#################################################################################
+# ALIAS PYTHON
+#################################################################################
+# alias python=python3.10
+# alias pip=pip3.10
+
+
+rm-pycache () {
+    find . -type f -name '*.py[co]' -delete -o -type d -name __pycache__ -delete
+}
+
+########################################################
+# SET QT environment variables
+########################################################
+
+export PATH="/home/linuxbrew/.linuxbrew/opt/qt@5/bin:$PATH"
+
+export LDFLAGS="-L/home/linuxbrew/.linuxbrew/opt/qt@5/lib"
+
+export CPPFLAGS="-I/home/linuxbrew/.linuxbrew/opt/qt@5/include"
+
+export PKG_CONFIG_PATH="/home/linuxbrew/.linuxbrew/opt/qt@5/lib/pkgconfig"
+
+
+#################################################################################
+            #############❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️###########
+            #############❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️###########
+            #############❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️❌️###########
+#################################################################################
+

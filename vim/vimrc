@@ -13,7 +13,7 @@ set lazyredraw
 set cursorline
 
 " Sets relative numbers, so you can 10j or 10k without counting lines
-set relativenumber
+" set relativenumber
 
 " Turn on syntax highlighting
 syntax on
